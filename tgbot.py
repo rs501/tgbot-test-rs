@@ -119,4 +119,4 @@ dispatcher.add_handler(MessageHandler(Filters.text & ~Filters.command, echo))
 # Start the Bot
 updater.start_polling()
 
-updater.idle()
+updater.idle(stop_signals=())
